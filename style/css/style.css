@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Playpen;
+    src: url(../font/PlaypenSans-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Playpen, cursive;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+.newsletter-icon {
+    height: 15px;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+.title{
+    justify-content: center;
+}
+.title img {
+    width: 200px;
+}
+
+.tagline {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+}
+
+/* Conteneur pour l'image */
+.image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 19px;
+}
+
+/* Image elle-même */
+.image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Titre de l'image */
+.image-container .image-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;          /* Le texte prend toute la largeur du conteneur */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);  /* Fond semi-transparent pour le texte */
+    color: white;         /* Couleur blanche pour le texte */
+    text-align: center;
+    opacity: 0;           /* Le texte est invisible par défaut */
+    transition: opacity 0.5s ease; /* Transition douce pour faire apparaître le texte */
+    z-index: 2;           /* Assure que le texte reste au-dessus de l'image */
+}
+
+/* Effet au survol de l'image */
+.image-container:hover img {
+    opacity: 0.7;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Afficher le titre au survol */
+.image-container:hover .image-title {
+    opacity: 1;
+}
+
+@media (max-width: 900px) {
+    .game-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    }
+}
+
+@media (max-width: 600px) {
+    .game-list {
+        grid-template-columns: 1fr; /* 1 colonne */
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    .newsletter-text {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 315px) {
+    .newsletter-icon {
+        display: none;
+    }
+
+}

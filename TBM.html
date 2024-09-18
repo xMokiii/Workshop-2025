@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Définit l'encodage du document en UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Permet au site de s'adapter aux tailles d'écran (responsive) -->
+
+    <title>Problèmes Absurdes de Train</title>
+    <!-- Titre de la page affiché dans l'onglet du navigateur -->
+
+    <link rel="stylesheet" href="style/css/TBM.css">
+    <!-- Lien vers la feuille de style CSS externe -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Préconnecte le domaine pour optimiser le chargement des polices -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <!-- Préconnecte aux ressources des polices avec gestion des permissions CORS -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Lien vers la police Google Font "Playpen Sans" avec différentes graisses de texte -->
+</head>
+<body>
+    <div class="title"><img src="style/img/logo.png" onclick="window.location.href='index.html'"></div>
+    <!-- Conteneur principal du jeu -->
+    <div id="game-container">
+
+        <!-- Titre principal du jeu -->
+        <h1 id="main-title">Absurd Developper Problems</h1>
+
+        <!-- Sous-titre indiquant le niveau actuel du joueur -->
+        <h2 id="level-title">Niveau : 0 - Début</h2>
+        
+        <div id="scenario">
+            <!-- Conteneur pour l'image des rails et des autres éléments -->
+            <div id="track-image-container">
+                
+                <!-- Image représentant l'avatar du joueur -->
+                <img id="you-image" src="style/img/DevProb/you.png" alt="You" class="You">
+                
+                <!-- Image représentant les rails du train -->
+                <img id="track-image" src="style/img/DevProb/track.svg" alt="Rails du train">
+                
+                <!-- Image représentant le train -->
+                <img id="train-image" src="style/img/DevProb/train_final.png" alt="Train" class="train">
+                
+                <!-- Conteneur pour les images représentant les deux choix -->
+                <div id="choice-images">
+                    <!-- Conteneur pour la première image de choix (bas) -->
+                    <div id="containeur-bas" class="image-container">
+                        <img id="choice-image-1" src="style/img/DevProb/choice1.jpg" alt="Choix 1">
+                    </div>
+                    <!-- Conteneur pour la deuxième image de choix (haut) -->
+                    <div id="containeur-haut" class="image-container">
+                        <img id="choice-image-2" src="style/img/DevProb/choice2.jpg" alt="Choix 2">
+                    </div>
+                </div>
+                
+                <!-- Conteneur pour les images de destruction affichées après le choix -->
+                <div id="destruction-images">
+                    <!-- Image représentant la destruction sur la voie gauche -->
+                    <img id="destruction-bas" src="style/img/DevProb/splat.png" alt="Destruction voie gauche">
+                    <!-- Image représentant la destruction sur la voie droite -->
+                    <img id="destruction-haut" src="style/img/DevProb/splat.png" alt="Destruction voie droite">
+                </div>
+            </div>
+            
+            <!-- Paragraphe contenant la question posée au joueur -->
+            <p id="question">Oh non ! Un tramway se dirige vers 5 personnes ! Tu peux hacker le Tram et le diriger vers l'autre rail, tuant une personne à la place. Que fais-tu ?</p>
+        </div>
+
+        <!-- Conteneur pour les boutons de choix -->
+        <div id="options">
+            <!-- Premier bouton de choix, associé à la fonction handleOption(1) -->
+            <button onclick="handleOption(1)">Option 1</button>
+            <!-- Deuxième bouton de choix, associé à la fonction handleOption(2) -->
+            <button onclick="handleOption(2)">Option 2</button>
+        </div>
+    </div>
+
+    <!-- Inclusion du fichier JavaScript pour gérer la logique du jeu -->
+    <script src="js/TBM.js"></script>
+</body>
+</html>

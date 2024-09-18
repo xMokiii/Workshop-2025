@@ -1,0 +1,207 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.title {
+    position: relative;
+  }
+  
+.title img {
+    position: absolute;
+    top: 4px;
+    left: -447px;
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    z-index: 1;
+}
+
+.title img:hover {
+  transform: scale(1.05); /* Agrandit légèrement l'image au survol */
+}
+
+.header {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Pour s'assurer que le titre est au-dessus des autres éléments */
+}
+
+#title {
+    font-size: 34px;
+    margin: 0;
+    text-align: center;
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: #000000; }
+    25% { color: #3404d4; }
+    75% { color: #d04b09; }
+    100% { color: #000000; }
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Permet aux images de dépasser si nécessaire */
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#left-zone, #right-zone {
+    height: 100%;
+    position: relative;
+    overflow: visible; /* Assure que les images ne sont pas coupées */
+    transition: flex 0.5s ease; /* Transition fluide pour la largeur des zones */
+}
+
+#left-zone {
+    background-color: #ffddc1; /* Couleur de la zone gauche */
+    position: relative; /* Pour positionner le soleil par rapport à la zone */
+}
+
+#right-zone {
+    background-color: #c1d3ff; /* Couleur de la zone droite */
+    position: relative; /* Pour positionner la lune par rapport à la zone */
+}
+
+#line {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent 50%, #ffffff 50%);
+    clip-path: path('M0,0 C20,50 40,50 60,0 C80,-50 100,50 120,0 C140,-50 160,50 180,0 C200,-50 220,50 240,0 C260,-50 280,50 300,0 L300,100 L0,100 Z');
+    transition: clip-path 0.5s ease, left 0.5s ease;
+}
+
+#EPSI {
+    width: 75%;
+    height: 15%;
+    background-image: url('image/EPSI-removebg-preview.png');
+    background-size: contain; /* Assure que toute l'image est visible */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 10%;
+    bottom: 35%;
+    transition: left 0.5s ease;
+}
+
+#WIS {
+    width: 75%;
+    height: 15%;
+    background-image: url('image/WIS-removebg-preview.png');
+    background-size: contain; /* Assure que toute l'image est visible */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 10%;
+    bottom: 35%;
+    transition: right 0.5s ease;
+}
+
+.counter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+}
+
+#left-counter {
+    left: 10px;
+}
+
+#right-counter {
+    right: 10px;
+}
+.random-counter {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+}
+
+#left-random-counter {
+    left: 16%;
+    top: 80%; /* Ajustez la position verticale */
+}
+
+#right-random-counter {
+    right: 16%;
+    top: 80%; /* Ajustez la position verticale */
+}
+
+.controls {
+    position: absolute;
+    bottom: 150px; /* Ajuste cette valeur pour monter les boutons plus haut */
+    display: flex;
+    justify-content: space-between; /* Espacement entre les boutons */
+    width: 80%; /* Prend toute la largeur du conteneur */
+    padding: 0 20px; /* Ajoute un padding pour ne pas toucher les bords */
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.move-button {
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.left-button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Dégradé de couleur pour le bouton gauche */
+}
+
+.right-button {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Dégradé de couleur pour le bouton droit */
+}
+
+.left-button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Inverse les couleurs au survol pour le bouton gauche */
+}
+
+.right-button:hover {
+    background: linear-gradient(135deg,  #feb47b, #ff7e5f);/* Inverse les couleurs au survol pour le bouton droit */
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

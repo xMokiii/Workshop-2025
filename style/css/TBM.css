@@ -1,0 +1,283 @@
+/* Définition de la police Playpen Sans avec ajustements pour les tailles et styles */
+.playpen-sans {
+    font-family: "Playpen Sans", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Style général du corps de la page */
+body {
+    font-family: "Playpen Sans", sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    position: relative;
+  }
+  
+.title img {
+  position: absolute;
+  top: -20px;
+  left: 6px;
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.title img:hover {
+  transform: scale(1.05); /* Agrandit légèrement l'image au survol */
+}
+
+/* Style pour les paragraphes */
+p {
+    font-size:1.4em; /* Taille du texte */
+    font-weight: 450; /* Épaisseur du texte */
+}
+
+/* Conteneur principal du jeu */
+#game-container {
+    max-width:70%; /* Limite la largeur maximale pour une meilleure flexibilité */
+    margin: 0 auto; /* Centrage horizontal */
+    margin-top: 20px;
+    padding: 0px;
+    background: white; /* Fond blanc */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+/* Style du titre principal */
+#main-title {
+    font-size: 2.5em; /* Taille du texte */
+    margin-bottom: 10px;
+    padding-top: 20px ;
+    font-weight: 450; /* Épaisseur du texte */
+    color: #000000; /* Couleur noire */
+}
+
+/* Style du titre de niveau */
+#level-title {
+    font-size: 1.4em; /* Taille du texte */
+    color: #555; /* Couleur gris foncé */
+    margin-bottom: 20px;
+    font-weight: 400; /* Épaisseur du texte */
+}
+
+/* Conteneur de l'image de la voie ferrée */
+#track-image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Largeur maximale */
+    max-width: 100%; /* S'adapte à la largeur de l'écran */
+    margin: 0 auto; /* Centrage horizontal */
+}
+
+/* Style de l'image de la voie ferrée */
+#track-image {
+    width: 100%; /* S'étend sur toute la largeur */
+    height: auto; /* Hauteur automatique */
+    border-radius: 10px; /* Coins arrondis */
+    opacity: 100%; /* Opacité complète */
+}
+
+/* Style de l'image du train */
+#train-image {
+    position: absolute;
+    top: -35.7%; /* Position du train par rapport au conteneur */
+    left: 0%; /* Le train commence à gauche */
+    width: 40%; /* Largeur du train */
+    height: auto; /* Hauteur automatique */
+    transform: translateY(-50%); /* Centrage vertical */
+    transform: rotate(2.5deg); /* Inclinaison du train */
+    transition: none; /* Pas d'animation par défaut */
+    z-index: 1;
+}
+
+/* Conteneur des images de choix */
+#choice-images {
+    position: absolute;
+    width: 100%;
+    height: 30%; /* Ajuste la hauteur des images de choix */
+    top: 60%; /* Ajuste la position verticale */
+    display: flex;
+    justify-content: space-between; /* Espacement entre les images */
+    align-items: center; /* Aligne les images verticalement */
+    pointer-events: none; /* Les clics passent à travers ces éléments */
+}
+
+/* Conteneur individuel pour chaque image de choix */
+.image-container {
+    width: 45%; /* Largeur des images en pourcentage */
+    height: 100%; /* Hauteur maximale */
+    position: relative;
+    overflow: hidden; /* Cache les parties débordantes des images */
+}
+
+/* Style pour les images dans les conteneurs */
+.image-container img {
+    width: 100%; /* Largeur maximale */
+    height: 100%; /* Hauteur maximale */
+    object-fit: cover; /* L'image garde son ratio tout en remplissant l'espace */
+}
+
+/* Style de l'image de l'avatar du joueur */
+#you-image {
+    width: 16%; /* Taille de l'image */
+    height: auto; /* Hauteur automatique */
+    border-radius: 10px; /* Coins arrondis */
+    opacity: 100%; /* Opacité complète */
+    position: absolute;
+    bottom: 7%; /* Positionnement en bas de l'écran */
+    left: 15%; /* Positionnement à gauche */
+}
+
+/* Conteneur pour les images de destruction */
+#destruction-images {
+    position: absolute;
+    width: 40%; /* Largeur du conteneur */
+    height: auto; /* Hauteur automatique */
+    display: flex;
+    align-items: center; /* Aligne les éléments verticalement */
+    pointer-events: none; /* Les clics passent à travers ces éléments */
+    top: -10%; /* Positionnement en haut */
+    right:-7%; /* Décalage à droite */
+}
+
+/* Style pour les images de destruction */
+#destruction-images img {
+    width: 60%; /* Largeur des images */
+    height: auto; /* Hauteur automatique */
+    opacity: 0; /* Caches par défaut */
+    transition: opacity 0.5s ease; /* Transition douce lors de l'apparition des images */
+}
+
+/* Positionnement de l'image de destruction en bas */
+#destruction-bas {
+    position: absolute;
+    left: -22%; /* Décalage à gauche */
+    bottom: -75%; /* Décalage en bas */
+}
+
+/* Styles des boutons */
+button {
+    background-color: #fcfcfc; /* Couleur de fond du bouton */
+    color: black; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne */
+    margin: 10px; /* Espacement externe */
+    border-radius: 15px; /* Coins arrondis */
+    border-color: black; /* Bordure noire */
+    cursor: pointer; /* Le pointeur change lors du survol */
+    transition: background-color 0.3s ease; /* Transition pour le changement de fond */
+    font-family: "Playpen Sans", sans-serif; /* Utilise la police définie */
+    text-align: center; /* Centre le texte */
+    font-weight: bold; /* Épaisseur du texte */
+    font-size: large; /* Taille du texte */
+}
+
+/* Effet lors du survol des boutons */
+button:hover {
+    background-color: #000000; /* Change la couleur de fond au survol */
+    color: white; /* Change la couleur du texte au survol */
+}
+
+/* Conteneurs pour les images de choix */
+#containeur-haut, #containeur-bas {
+    position: absolute;
+    width: 18%; /* Réduit la largeur des conteneurs */
+    height: auto; /* Ajuste la hauteur automatiquement */
+    overflow: hidden; /* Masque les parties débordantes */
+}
+
+/* Positionnement du conteneur supérieur */
+#containeur-haut {
+    top: -175%; /* Positionnement en haut */
+    left: 70%; /* Positionnement à droite */
+}
+
+/* Positionnement du conteneur inférieur */
+#containeur-bas {
+    bottom: -10%; /* Positionnement en bas */
+    left: 60%; /* Positionnement légèrement à droite */
+}
+
+/* Style pour empiler les images verticalement sur petits écrans */
+#choice-images {
+    flex-direction: column; /* Change la disposition des images en colonne */
+    top: 50%; /* Ajuste la position verticale */
+}
+
+/* Animation du trajet droit */
+@keyframes straight-path {
+    0% { left: 0%; top: -35.7%; } /* Début à gauche */
+    100% { left: 70%; top: 29%; } /* Arrive à droite */
+}
+
+/* Animation du trajet courbé */
+@keyframes curved-path {
+    0% { left: 0%; top: -35.7%; }
+    40% { left: 25%; top: -15%; }
+    60% { left: 47%; top: -40%; transform: rotate(-20deg); }
+    100% { left: 70%; top: -33%; transform: rotate(-3deg); }
+}
+
+/* Styles pour les écrans entre 800px et 1200px */
+@media (800px <=width < 1200px) {
+    #main-title {
+        font-size: 2.5em; /* Taille du titre */
+        margin-bottom: 25px; /* Espacement sous le titre */
+        padding-top:20px; /* Espacement au-dessus du titre */
+    }
+    #game-container {
+        max-width:75%; /* Largeur maximale réduite */
+    }
+}
+
+/* Styles pour les écrans entre 540px et 800px */
+@media (540px <=width < 800px) {
+    #main-title {
+        font-size: 2.5em; /* Taille du titre */
+        margin-bottom: 25px; /* Espacement sous le titre */
+        padding-top:20px; /* Espacement au-dessus du titre */
+    }
+    #level-title {
+        font-size: 20px; /* Taille du titre de niveau */
+        margin-bottom:60px; /* Espacement sous le titre de niveau */
+        font-weight:450; /* Épaisseur du texte */
+    }
+    p {
+        font-size:1.3em; /* Taille du texte des paragraphes */
+    }
+    #game-container {
+        max-width:80%; /* Largeur maximale réduite */
+    }
+}
+
+/* Styles pour les écrans en dessous de 540px */
+@media (width < 540px) {
+    #main-title {
+        font-size: 2.3em; /* Taille réduite du titre */
+        margin-bottom: 20px; /* Réduction de l'espacement */
+        padding-top: 20px; /* Réduction de l'espacement */
+    }
+    #level-title {
+        font-size: 1em; /* Taille réduite du titre de niveau */
+        margin-bottom: 80px; /* Augmentation de l'espacement sous le titre */
+        font-weight:500; /* Épaisseur du texte */
+    }
+    body {
+        font-size: 0.9em; /* Taille générale du texte réduite */
+    }
+    p {
+        font-size:1.2em; /* Taille réduite des paragraphes */
+        font-weight: 450; /* Épaisseur du texte */
+        padding-top: 20px; /* Espacement supérieur */
+        padding-bottom: 20px; /* Espacement inférieur */
+    }
+    #game-container {
+        max-width:90%; /* Largeur maximale adaptée aux petits écrans */
+    }
+    button {
+        font-size:small; /* Taille réduite des boutons */
+    }
+}
