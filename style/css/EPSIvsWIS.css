@@ -107,8 +107,7 @@ body {
     position: absolute;
     left: 10%;
     bottom: 35%;
-    transition: left 0.5s ease;
-    z-index: 23;
+    transition: left 0.5s ease
 }
 
 #WIS {
