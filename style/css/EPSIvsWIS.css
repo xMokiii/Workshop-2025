@@ -22,19 +22,18 @@ body {
     position: relative;
   }
   
-.title img {
-    position: absolute;
+  .title img {
+    justify-content: start;
     top: 4px;
-    left: -447px;
+    right: 8%;
     width: 100px;
     cursor: pointer;
     transition: transform 0.2s;
-    z-index: 1;
-}
-
-.title img:hover {
-  transform: scale(1.05); /* Agrandit légèrement l'image au survol */
-}
+  }
+  
+  .title img:hover {
+    transform: scale(1.05); /* Agrandit légèrement l'image au survol */
+  }
 
 .header {
     position: absolute;
