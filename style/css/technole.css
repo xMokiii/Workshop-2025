@@ -1,0 +1,112 @@
+body {
+    font-family: "Playpen Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e8f0f2; /* Couleur de fond douce */
+    margin: 0; /* Supprimer les marges par défaut */
+}
+
+.playpen-sans {
+    font-family: "Playpen Sans", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; /* Fond blanc pour le conteneur */
+    padding: 20px; /* Espacement interne */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+
+h1 {
+    color: #000000; /* Couleur du titre */
+    margin-bottom: 20px; /* Espacement sous le titre */
+    font-weight: 450;
+}
+
+#board {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    transition: background-color 0.3s; /* Animation de la couleur */
+}
+
+.correct {
+    background-color: #6aaa64; /* Vert pour la lettre correcte */
+    color: white;
+    border: none; /* Enlever la bordure */
+}
+
+.present {
+    background-color: #c9b458; /* Jaune pour la lettre présente */
+    color: white;
+    border: none; /* Enlever la bordure */
+}
+
+.absent {
+    background-color: #787c7e; /* Gris pour la lettre absente */
+    color: white;
+    border: none; /* Enlever la bordure */
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc; /* Bordure légère */
+    border-radius: 5px; /* Coins arrondis */
+    margin-bottom: 10px; /* Espacement sous le champ */
+    transition: border-color 0.3s; /* Animation de la bordure */
+}
+
+input:focus {
+    border-color: #4a90e2; /* Couleur de bordure au focus */
+    outline: none; /* Supprimer le contour par défaut */
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: "Playpen Sans", sans-serif; /* Ajoutez cette ligne */
+    cursor: pointer;
+    border: none; /* Enlever la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #4a90e2; /* Couleur du bouton */
+    color: white;
+    transition: background-color 0.3s; /* Animation de couleur de fond */
+}
+
+button:hover {
+    background-color: #357ab7; /* Couleur du bouton au survol */
+}
+
+#restartContainer {
+    display: flex;
+    justify-content: center; /* Centre le bouton */
+    margin-top: 20px; /* Espacement entre le tableau et le bouton */
+}
+
+.restart-button {
+    margin: 0; /* Pas de marge autour du bouton */
+    display: none; /* Cacher par défaut */
+}
