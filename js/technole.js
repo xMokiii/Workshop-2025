@@ -13,7 +13,7 @@ const restartButton = document.createElement('button');
 restartButton.classList.add('restart-button');
 
 async function loadWords() {
-    const response = await fetch('words.json'); // Charger le fichier JSON
+    const response = await fetch('../json/words.json'); // Charger le fichier JSON
     const data = await response.json();
     validWords = data.words; // Extraire la liste de mots
 }
