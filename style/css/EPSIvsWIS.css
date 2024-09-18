@@ -100,7 +100,7 @@ body {
 #EPSI {
     width: 75%;
     height: 15%;
-    background-image: url('image/EPSI-removebg-preview.png');
+    background-image: url('../img/EPSI-removebg-preview.png');
     background-size: contain; /* Assure que toute l'image est visible */
     background-position: center;
     background-repeat: no-repeat;
@@ -108,12 +108,13 @@ body {
     left: 10%;
     bottom: 35%;
     transition: left 0.5s ease;
+    z-index: 23;
 }
 
 #WIS {
     width: 75%;
     height: 15%;
-    background-image: url('image/WIS-removebg-preview.png');
+    background-image: url('../img/WIS-removebg-preview.png');
     background-size: contain; /* Assure que toute l'image est visible */
     background-position: center;
     background-repeat: no-repeat;
