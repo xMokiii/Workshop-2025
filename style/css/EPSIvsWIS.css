@@ -100,7 +100,7 @@ body {
 #EPSI {
     width: 75%;
     height: 15%;
-    background-image: url('image/EPSI-removebg-preview.png');
+    background-image: url('../img/EPSI-removebg-preview.png');
     background-size: contain; /* Assure que toute l'image est visible */
     background-position: center;
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ body {
 #WIS {
     width: 75%;
     height: 15%;
-    background-image: url('image/WIS-removebg-preview.png');
+    background-image: url('../img/WIS-removebg-preview.png');
     background-size: contain; /* Assure que toute l'image est visible */
     background-position: center;
     background-repeat: no-repeat;
@@ -152,17 +152,17 @@ body {
 
 #left-random-counter {
     left: 16%;
-    top: 80%; /* Ajustez la position verticale */
+    top: 180%; /* Ajustez la position verticale */
 }
 
 #right-random-counter {
     right: 16%;
-    top: 80%; /* Ajustez la position verticale */
+    top: 180%; /* Ajustez la position verticale */
 }
 
 .controls {
     position: absolute;
-    bottom: 150px; /* Ajuste cette valeur pour monter les boutons plus haut */
+    bottom: 160px; /* Ajuste cette valeur pour monter les boutons plus haut */
     display: flex;
     justify-content: space-between; /* Espacement entre les boutons */
     width: 80%; /* Prend toute la largeur du conteneur */
@@ -187,6 +187,7 @@ button {
 
 .left-button {
     background: linear-gradient(135deg, #6a11cb, #2575fc); /* Dégradé de couleur pour le bouton gauche */
+    
 }
 
 .right-button {
