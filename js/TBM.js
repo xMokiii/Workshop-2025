@@ -26,7 +26,7 @@ const scenarios = [
     },
     {
         level: 3,
-        name: "Besois sous pression",
+        name: "Besoins sous pression",
         trackImage: "../style/img/DevProb/track.svg",
         trainImage: "../style/img/DevProb/train_final.png",
         choiceImage1: "../style/img/DevProb/cafe.png",
@@ -56,7 +56,7 @@ const scenarios = [
         choiceImage1: "../style/img/DevProb/rien.png",
         choiceImage2: "../style/img/DevProb/rien.png",
         destructionBas: "../style/img/DevProb/rien.png",
-        destructionHaut: "../style/img/DevProb/rien.png",
+        destructionHaut: "../style/img/DevProb/pleurer.png",
         question: "Oh non ! Ton tramway TBM est en retard ! Que fais-tu ?",
         options: ["Attendre", "Pleurer"]
     },

@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EPSI vs WIS</title>
     <link rel="stylesheet" href="style/css/EPSIvsWIS.css">
 </head>
+
 <body>
-    <div class="title"><img src="style/img/logo.png" onclick="window.location.href='index.html'"></div>
-    <div class="header">
-        <h1 id="title"><em>EPSI vs WIS</em></h1>
-    </div>
-    <div class="container">
-        <div id="left-zone">
+    <!-- Bande blanche en haut -->
+    <div class="header-bar"></div>
+
+    <header class="title">
+        <img src="style/img/logo.png" alt="Logo" id="logo-home" onclick="window.location.href='index.html'">
+        <h3 id="title"><em>EPSI vs WIS</em></h3>
+    </header>
+
+    <main class="container">
+        <section id="left-zone">
             <div id="EPSI"></div>
-        </div>
+        </section>
+
         <div id="line"></div>
-        <div id="right-zone">
+
+        <section id="right-zone">
             <div id="WIS"></div>
-        </div>
+        </section>
+
         <div class="counter" id="left-counter">50%</div>
         <div class="counter" id="right-counter">50%</div>
-        <div class="random-counter" id="left-random-counter">1000</div>
-        <div class="random-counter" id="right-random-counter">1000</div>
-    </div>
-    <div class="controls">
+    </main>
+
+    <section class="controls">
+        
         <button id="move-right" class="move-button right-button">+1 EPSI</button>
         <button id="move-left" class="move-button left-button">+1 WIS</button>
-    </div>
+
+        <div class="random-counter" id="left-random-counter">1000</div>
+        <div class="random-counter" id="right-random-counter">1000</div>
+    </section>
+
     <script src="js/EPSIvsWIS.js"></script>
 </body>
+
 </html>

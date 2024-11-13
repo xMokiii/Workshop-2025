@@ -10,10 +10,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     background-color: #f0f0f0;
 }
@@ -24,16 +20,15 @@ body {
   
 .title img {
     position: absolute;
-    top: 4px;
-    left: -447px;
+    top: 9px;
+    left: 7px;
     width: 100px;
     cursor: pointer;
     transition: transform 0.2s;
-    z-index: 1;
 }
-
+  
 .title img:hover {
-  transform: scale(1.05); /* Agrandit légèrement l'image au survol */
+    transform: scale(1.05); /* Agrandit légèrement l'image au survol */
 }
 
 .header {
@@ -152,17 +147,17 @@ body {
 
 #left-random-counter {
     left: 16%;
-    top: 80%; /* Ajustez la position verticale */
+    top: 180%; /* Ajustez la position verticale */
 }
 
 #right-random-counter {
     right: 16%;
-    top: 80%; /* Ajustez la position verticale */
+    top: 180%; /* Ajustez la position verticale */
 }
 
 .controls {
     position: absolute;
-    bottom: 150px; /* Ajuste cette valeur pour monter les boutons plus haut */
+    bottom: 160px; /* Ajuste cette valeur pour monter les boutons plus haut */
     display: flex;
     justify-content: space-between; /* Espacement entre les boutons */
     width: 80%; /* Prend toute la largeur du conteneur */
@@ -187,6 +182,7 @@ button {
 
 .left-button {
     background: linear-gradient(135deg, #6a11cb, #2575fc); /* Dégradé de couleur pour le bouton gauche */
+    
 }
 
 .right-button {

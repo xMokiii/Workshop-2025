@@ -1,5 +1,5 @@
 let countdown; // Pour stocker le compte à rebours
-let timeLeft = 45; // Le temps initial bas
+let timeLeft = 60; // Le temps initial
 const bonusTime = 5;
 const maxTime = 120; // Temps maximum
 let rulesStatus = new Array(10).fill(false); // Tableau pour suivre les règles validées
@@ -81,7 +81,7 @@ function gameOver() {
 
 function resetGame() {
     stopTimer();
-    timeLeft = 40; // Remettre le temps initial
+    timeLeft = 60; // Remettre le temps initial
     document.getElementById('password').value = ''; // Vide le champ mot de passe
     resetRulesDisplay(); // Réinitialise les règles affichées
     rulesStatus.fill(false); // Réinitialiser le tableau des règles validées
@@ -107,7 +107,7 @@ function checkWinCondition() {
         alert("Win!");
         document.getElementById('restart').style.display = 'block'; // Afficher le bouton "Recommencer"
         stopTimer();
-        timeLeft = 40;
+        timeLeft = 60;
     }
 }
 
@@ -123,7 +123,7 @@ document.getElementById('submit').addEventListener('click', function () {
 
 document.getElementById('restart').addEventListener('click', function() {
     resetGame();
-    timeLeft = 40;
+    timeLeft = 60;
     stopTimer();
     this.style.display = 'none'; // Masquer le bouton après avoir réinitialisé
 });

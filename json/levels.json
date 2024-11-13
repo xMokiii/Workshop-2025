@@ -1,0 +1,76 @@
+{
+    "level":[
+        {
+            "level": 1,
+            "name": "Classique",
+            "trackImage": "../style/img/DevProb/track.svg",
+            "trainImage": "../style/img/DevProb/train_final.png",
+            "choiceImage1": "../style/img/DevProb/5guyt.png",
+            "choiceImage2": "../style/img/DevProb/oneguy.png",
+            "destructionBas": "../style/img/DevProb/splat.png",
+            "destructionHaut": "../style/img/DevProb/splat.png",
+            "question": "Oh non ! Un tramway se dirige vers 5 personnes ! Tu peux hacker le Tram et le diriger vers l'autre rail, tuant une personne à la place. Que fais-tu ?",
+            "options": ["Ne rien faire", "Hacker le système"]
+        },
+        {
+            "level": 2,
+            "name": "Discipline",
+            "trackImage": "../style/img/DevProb/track.svg",
+            "trainImage": "../style/img/DevProb/train_final.png",
+            "choiceImage1": "../style/img/DevProb/dreamsetup.png",
+            "choiceImage2": "../style/img/DevProb/spaghetticode.png",
+            "destructionBas": "../style/img/DevProb/splat.png",
+            "destructionHaut": "../style/img/DevProb/splat.png",
+            "question": "Oh non ! Ce tramway va te forcer à reprendre ton spaghetti code durant ton temps libre ! Tu peux hacker le Tram et faire des recherches pour ton prochain setup à la place. Que fais-tu ?",
+            "options": ["Être studieux", "Hacker le système"]
+        },
+        {
+            "level": 3,
+            "name": "Besois sous pression",
+            "trackImage": "../style/img/DevProb/track.svg",
+            "trainImage": "../style/img/DevProb/train_final.png",
+            "choiceImage1": "../style/img/DevProb/cafe.png",
+            "choiceImage2": "../style/img/DevProb/sodas.png",
+            "destructionBas": "../style/img/DevProb/splat.png",
+            "destructionHaut": "../style/img/DevProb/splat.png",
+            "question": "Oh non ! Tu es en plein workshop et ce tramway fonce sur la cargaison de sodas de l'Epsi, tu peux hacker le Tram et le diriger vers la cargaison de cafés à la place. Que fais-tu ?",
+            "options": ["Ne rien faire", "Hacker le système"]
+        },
+        {
+            "level": 4,
+            "name": "Dilemne épineux",
+            "trackImage": "../style/img/DevProb/track.svg",
+            "trainImage": "../style/img/DevProb/train_final.png",
+            "choiceImage1": "../style/img/DevProb/dreamsetup.png",
+            "choiceImage2": "../style/img/DevProb/ingenieur.png",
+            "destructionBas": "../style/img/DevProb/splat.png",
+            "destructionHaut": "../style/img/DevProb/splat.png",
+            "question": "Oh non ! Un tramway fonce sur ta carrière de gamer ! Tu peux hacker le Tram et le diriger vers l'autre rail, où se trouve ta carrière d'ingénieur.",
+            "options": ["Ne rien faire", "Hacker le système"]
+        },
+        {
+            "level": 5,
+            "name": "TBM ^^",
+            "trackImage": "../style/img/DevProb/track.svg",
+            "trainImage": "../style/img/DevProb/rien.png",
+            "choiceImage1": "../style/img/DevProb/rien.png",
+            "choiceImage2": "../style/img/DevProb/rien.png",
+            "destructionBas": "../style/img/DevProb/rien.png",
+            "destructionHaut": "../style/img/DevProb/rien.png",
+            "question": "Oh non ! Ton tramway TBM est en retard ! Que fais-tu ?",
+            "options": ["Attendre", "Pleurer"]
+        },
+        {
+            "level": 6,
+            "name": "Fin",
+            "trackImage": "../style/img/DevProb/track.svg",
+            "trainImage": "../style/img/DevProb/train_final.png",
+            "choiceImage1": "../style/img/DevProb/rien.png",
+            "choiceImage2": "../style/img/DevProb/rien.png",
+            "destructionBas": "../style/img/DevProb/rien.png",
+            "destructionHaut": "../style/img/DevProb/rien.png",
+            "question": "Félicitations ! Tu as terminé la démo !",
+            "options": ["Ne rien faire", "Pranker le conducteur"]
+        }
+    ]
+}
