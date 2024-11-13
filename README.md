@@ -13,7 +13,8 @@ Le thème de ce workshop « Vis ma vie d'étudiant en informatique ».
 - **APIs** pour des ressources diverses
 
 ### Description des Jeux Créés
-Nous avons travaillé sur plusieurs jeux, chacun conçu pour mettre en valeur nos compétences en développement web. Voici quelques exemples :
+Nous avons travaillé sur plusieurs jeux, chacun conçu pour mettre en valeur nos compétences en développement web.
+Voici quelques exemples :
 
 1. **Absurd Developper Problems** : Jeu basé sur le dilemme du Tramway, à la sauce d'étudiant Epsi, constituant nos choix quotidiens 
 2. **Technole** : Un jeu où tu dois trouver un mot de 5 lettres en lien avec la technologie en 6 essais avec des informations en fonction de si la lettre est dans le mot finale, et à la bonne place.
