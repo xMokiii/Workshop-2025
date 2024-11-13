@@ -14,6 +14,7 @@ Le thème de ce workshop « Vis ma vie d'étudiant en informatique ».
 
 ### Description des Jeux Créés
 Nous avons travaillé sur plusieurs jeux, chacun conçu pour mettre en valeur nos compétences en développement web.
+
 Voici quelques exemples :
 
 1. **Absurd Developper Problems** : Jeu basé sur le dilemme du Tramway, à la sauce d'étudiant Epsi, constituant nos choix quotidiens 
